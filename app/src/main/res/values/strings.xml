@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">MiManhwa</string>
+    <!-- Menu de navigación -->
+    <string name="navigration_open">Open Nabvigation drawe</string>
+    <string name="navigration_close">Close Nabvigation drawe</string>
+
+    <!-- Menu items -->
+    <string name="title_one">Usuario</string>
+    <string name="title_two">Administrador</string>
+    <string name="title_three">Autentificación</string>
+    <string name="home">Inicio</string>
+    <string name="book_mark">Marcadores</string>
+    <string name="genre">Generos</string>
+    <string name="add_book">Añadir lectura</string>
+    <string name="user_management">Gestionar usuarios</string>
+    <string name="genre_management">Gestionar generos</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="settings_profile">Ajustes</string>
+
+    <!-- Intro activity -->
+    <string name="presentation_title_one">Descubre tu</string>
+    <string name="presentation_title_two">Lectura favorita</string>
+    <string name="presentation_title_three">Lee ahora o después</string>
+    <string name="presentation_description">Puede buscar manhwas por género, buscar títulos específicos o consultar nuestras recomendaciones.</string>
+
+    <!-- Buttons texts-->
+
+    <string name="start_button">Empezar</string>
+    <string name="init_sesion">Iniciar sesión</string>
+    <string name="add_button">Añadir</string>
+    <string name="save">Guardar</string>
+    <string name="read_from_zero">Empezar leer</string>
+    <string name="read">Ver capitulos</string>
+    <string name="send">Enviar</string>
+
+    <!-- Edit text hint -->
+
+    <string name="name_hint">Nombre</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="password_confirm_hint">Confirmar contraseña</string>
+    <string name="comment_hint">Comentario</string>
+    <string name="description_hint">Descripción</string>
+    <string name="genre_hint">Seleccionar genero</string>
+    <string name="message">Mensaje</string>
+
+    <!-- Login activity -->
+    <string name="autorisation_title">Autorización</string>
+    <string name="log_help">¿Olvidaste tu contraseña?</string>
+    <string name="log_title_two">No tiene cuenta</string>
+    <string name="log_register_tile">Registrate ahora</string>
+
+    <!-- Register activity -->
+    <string name="register_title">Registro</string>
+    <string name="term_title">He leído y acepto los</string>
+    <string name="term_click_title">Términos y Condiciones de uso.</string>
+
+    <!-- Add genre -->
+    <string name="add_genre_title">Nuevo genero</string>
+    <string name="load_frontpage_title">Añadir portada</string>
+
+    <!-- Add book -->
+    <string name="add_book_title">Nueva lectura</string>
+
+    <!-- Dialog add coment -->
+    <string name="comment_title">Nuevo comentario</string>
+
+    <!-- Add chapter-->
+    <string name="chapter_add_title">Nuevo capitulo</string>
+    <string name="chapter_add_archive">Añadir archivo</string>
+
+    <!-- Profile activity -->
+    <string name="add_photo">Poner foto de perfil</string>
+    <string name="account">Cuenta</string>
+    <string name="activate_notifications">Activar notificaciones</string>
+    <string name="settings">Ajustes</string>
+    <string name="update_profile_text">Guardar actualizaciones del perfil</string>
+    <string name="privacity_politic">Politica de seguidad</string>
+    <string name="help">Ayuda</string>
+    <string name="faq">Preguntas frecuentes</string>
+    <string name="profile_save_question">¿Deseas guardar cambios de tu perfil?</string>
+    <string name="do_question">Hacer una pregunta</string>
+    <string name="author">Nombre de autor</string>
+
+    <!-- Add book menu -->
+
+    <string name="precess">EN PROCESO</string>
+    <string name="all">TODOS</string>
+    <string name="planted">PLANEADO</string>
+    <string name="completed">COMPLETADO</string>
+    <string name="abandoned">ABANDONADO</string>
+
+    <!-- Add book menu -->
+
+    <string name="precess_min">En proceso</string>
+    <string name="all_min">Todos</string>
+    <string name="planted_min">Planeado</string>
+    <string name="completed_min">Completado</string>
+    <string name="abandoned_min">Abandonado</string>
+
+    <!-- Contact activity -->
+
+    <string name="title_contact">Nueva consulta</string>
+
+    <!-- FAQ ACTIVITY -->
+
+    <string name="faq_one">¿Quien creo la aplicación?</string>
+    <string name="answer_one">El creador de la aplicación es Konstantin Krishtapov</string>
+    <string name="faq_two">¿Con que objetivo se creo?</string>
+    <string name="answer_two">La aplicacion fue creada como proyecto final de curso, Grado Superior DAM</string>
+
+
+    <!-- TERNS AND CONDITIONS -->
+
+    <string name="terms">Política de privacidad
+Esta pantalla se utiliza para informar a los visitantes sobre mis políticas con la recopilación, uso y divulgación de Información personal si alguien decide utilizar mi Servicio.
+Si elige utilizar mi Servicio, acepta la recopilación y el uso de información en relación con esta política. La Información personal que recopilo se utiliza para proporcionar y mejorar el Servicio. No usaré ni compartiré su información con nadie excepto como se describe en esta Política de Privacidad.
+Recopilación y uso de información
+Para una mejor experiencia, al utilizar nuestro Servicio, es posible que le solicite que nos proporcione cierta información de identificación personal, que incluye, entre otros, correo electrónico, contraseña y nombre de usuario. La información que solicito se conservará en su dispositivo y no la recopilo de ninguna manera.
+La aplicación utiliza servicios de terceros que pueden recopilar información utilizada para identificarlo.
+Enlace a la política de privacidad de proveedores de servicios externos utilizados por la aplicación
+Quiero informarle que cada vez que utiliza mi Servicio, en caso de un error en la aplicación, recopilo datos e información (a través de productos de terceros) en su teléfono llamados Datos de registro. Estos datos de registro pueden incluir información como la dirección del Protocolo de Internet (“IP”) de su dispositivo, el nombre del dispositivo, la versión del sistema operativo, la configuración de la aplicación cuando utiliza mi Servicio, la hora y fecha de su uso del Servicio y otras estadísticas. .
+Cookies
+Las cookies son archivos con una pequeña cantidad de datos que se utilizan habitualmente como identificadores únicos anónimos. Estos se envían a su navegador desde los sitios web que visita y se almacenan en la memoria interna de su dispositivo.
+Este Servicio no utiliza estas “cookies” explícitamente. Sin embargo, la aplicación puede utilizar códigos y bibliotecas de terceros que utilizan “cookies” para recopilar información y mejorar sus servicios. Tiene la opción de aceptar o rechazar estas cookies y saber cuándo se envía una cookie a su dispositivo. Si decide rechazar nuestras cookies, es posible que no pueda utilizar algunas partes de este Servicio.
+Seguridad
+Valoro su confianza al proporcionarnos su información personal, por lo que nos esforzamos por utilizar medios comercialmente aceptables para protegerla. Pero recuerde que ningún método de transmisión a través de Internet o método de almacenamiento electrónico es 100% seguro y confiable, y no puedo garantizar su seguridad absoluta.
+Cambios a esta política de privacidad
+Puedo actualizar nuestra Política de Privacidad de vez en cuando. Por lo tanto, se recomienda revisar esta página periódicamente para detectar cualquier cambio. Le notificaré cualquier cambio publicando la nueva Política de Privacidad en esta página. Estos cambios entran en vigor inmediatamente después de su publicación en esta página.</string>
+
+
+    <string name="aviso">Introdusca correo con que has registrado usuario.</string>
+    <string name="reset_password">Restablecer contraseña</string>
+
+</resources>

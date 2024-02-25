@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardBackground"
+    android:padding="20dp">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_add_comment_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_title"
+                android:textSize="25sp"
+                style="@style/TextColorTwo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dialog_add_comment_title_tv"
+                android:orientation="vertical"
+                style="@style/CardBackground">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/dialog_add_comment_text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    app:boxStrokeColor="@color/orange"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/dialog_add_comment_text_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/comment_hint"
+                        style="@style/EditBox"
+                        android:drawableStart="@drawable/ic_genre"
+                        android:drawablePadding="15dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dialog_add_comment_btn"
+                    style="@android:style/Widget.Button"
+                    android:layout_below="@+id/dialog_add_comment_text_title"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/orange_button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/add_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

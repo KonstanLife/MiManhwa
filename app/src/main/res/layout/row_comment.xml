@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardBackground"
+        android:padding="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/comProfileIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_person"
+            app:shapeAppearanceOverlay="@style/style_circle_image"/>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/comProfileIV"
+            android:text="Nombre de persona"
+            style="@style/TextColorTwo"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/comProfileIV"
+            android:layout_below="@+id/nameTv"
+            android:layout_marginTop="5dp"
+            android:text="Comentario dejado por el usuario"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            style="@style/TextColorTwo"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toEndOf="@+id/comProfileIV"
+            android:layout_below="@+id/commentTv"
+            android:background="@color/pure_gray"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

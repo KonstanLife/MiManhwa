@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AddActivityBackground"
+    tools:context=".Activities.HelpActivity.FAQActivity">
+
+    <include
+        layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:id="@+id/contact_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_back"
+        android:layout_above="@+id/add_book_btn"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextColorTwo"
+            android:text="@string/terms"/>
+
+    </ScrollView>
+</RelativeLayout>

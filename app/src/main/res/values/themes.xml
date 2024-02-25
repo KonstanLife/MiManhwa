@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MiManhwa" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+        <!-- poput menu color text -->
+        <item name="android:itemTextAppearance">@style/ChangeTextColor</item>
+    </style>
+
+    <!--  poput menu color text -->
+    <style name="ChangeTextColor" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/pure_gray</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="ScreenBackground"><item name="android:background">@color/dark_white</item></style>
+    <style name="CardBackground"><item name="android:background">@color/white</item></style>
+    <style name="TextColorOne"><item name="android:textColor">@color/white</item></style>
+    <style name="TextColorTwo"><item name="android:textColor">@color/pure_gray</item></style>
+
+
+    <!-- Tool bar and menu -->
+    <style name="CustomToolBar"><item name="android:background">@color/orange</item></style>
+    <style name="NavigationMenu"><item name="android:background">@color/white</item></style>
+    <style name="ProfileImageView"><item name="android:background">@color/dark_orange</item></style>
+
+    <!-- Intro activity -->
+    <style name="IntroActivityBackground">
+        <item name="android:src">@drawable/intro_dark_pic</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+    <style name="IntroActivityCardBackground"><item name="android:background">@color/white</item></style>
+
+    <!-- Login activity -->
+    <style name="LoginTitleTextColor"><item name="android:textColor">@color/gray</item></style>
+
+    <style name="EditBox">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/pure_gray</item>
+    </style>
+
+    <!-- logo -->
+    <style name="logo">
+        <item name="android:src">@drawable/logo_day</item>
+    </style>
+
+    <!-- Add activities -->
+    <style name="AddActivityBackground"><item name="android:background">@color/white</item></style>
+
+</resources>

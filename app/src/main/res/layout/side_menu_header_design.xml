@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    style="@style/CustomToolBar"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/hd_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hd_profile_img"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                style="@style/ProfileImageView"
+                android:src="@drawable/ic_person_white"
+                app:shapeAppearanceOverlay="@style/style_circle_image"/>
+
+            <ImageButton
+                android:id="@+id/notification_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_notification_white"
+                android:background="@android:color/transparent"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/hd_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hd_relative_layout"
+            android:layout_marginTop="15dp"
+            android:text="Konstantin Krishtapov"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            style="@style/TextColorOne"/>
+
+        <TextView
+            android:id="@+id/hd_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hd_name_tv"
+            android:layout_marginTop="8dp"
+            android:text="kon@live.ru"
+            style="@style/TextColorOne"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

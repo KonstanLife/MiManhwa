@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AddActivityBackground"
+    tools:context=".Activities.HelpActivity.ContactActivity">
+
+    <include
+        layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:id="@+id/contact_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_back"
+        android:layout_above="@+id/add_book_btn"
+        android:padding="32dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contact_title_tv"
+                style="@style/TextColorTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_contact"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contact_title_tv"
+                android:orientation="vertical"
+                style="@style/AddActivityBackground">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/contact_name_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    app:boxStrokeColor="@color/orange"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/contact_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_hint"
+                        style="@style/EditBox"
+                        android:drawableStart="@drawable/ic_genre"
+                        android:drawablePadding="15dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/contact_message_title"
+                    android:layout_below="@+id/contact_name_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    app:boxStrokeColor="@color/orange"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/contact_message_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/message"
+                        style="@style/EditBox"
+                        android:drawableStart="@drawable/baseline_message_24"
+                        android:drawablePadding="15dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_message_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/orange_button_background"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

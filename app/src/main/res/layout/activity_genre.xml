@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground"
+    tools:context=".Activities.GeneralActivity.GenreActivity">
+
+    <include
+        layout="@layout/toolbar_back"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/genre_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomL1"
+        android:layout_below="@+id/toolbar_back"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/row_genre" />
+</RelativeLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground"
+    tools:context=".Activities.EditActivity.EditProfileActivity">
+
+    <include
+        layout="@layout/toolbar_back"
+        />
+
+    <RelativeLayout
+        android:id="@+id/profile_header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomToolBar"
+        android:padding="15dp"
+        android:layout_below="@+id/toolbar_back">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_profile_img"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                style="@style/ProfileImageView"
+                android:src="@drawable/ic_person_white"
+                app:shapeAppearanceOverlay="@style/style_circle_image"/>
+
+
+        <TextView
+            android:id="@+id/profile_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile_profile_img"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Konstantin Krishtapov"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            style="@style/TextColorOne"/>
+
+        <TextView
+            android:id="@+id/profile_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/profile_profile_img"
+            android:layout_below="@+id/profile_name_tv"
+            android:layout_marginTop="8dp"
+            android:text="Tipo usuario: admin"
+            style="@style/TextColorOne"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_header_rl">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/profile_add_photo_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        style="@style/CardBackground">
+
+
+        <ImageView
+            android:id="@+id/profile_ic_photo_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_photo" />
+
+
+        <TextView
+            android:id="@+id/add_photo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile_ic_photo_add"
+            android:layout_centerVertical="true"
+            android:text="@string/add_photo"
+            android:layout_marginStart="25dp"
+            android:textSize="16sp"
+            style="@style/TextColorTwo"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_account_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_add_photo_rl"
+        android:padding="15dp"
+        style="@style/CardBackground">
+
+
+
+        <TextView
+            android:id="@+id/prefile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            style="@style/TextColorTwo"/>
+
+        <TextView
+            android:id="@+id/prefile_mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prefile_text"
+            android:layout_marginTop="10dp"
+            android:text="kon@live.ru"
+            android:textSize="14sp"
+            style="@style/TextColorTwo"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/prefile_mail_text"
+            android:layout_marginTop="10dp"
+            android:background="@color/pure_gray"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_settings_text_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_account_rl"
+        android:padding="15dp"
+        style="@style/CardBackground">
+
+
+
+        <TextView
+            android:id="@+id/profile_settings_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            style="@style/TextColorTwo"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_settings_text_view">
+
+            <ImageView
+                android:id="@+id/profile_ic_notification"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notifications" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/profile_ic_notification"
+                android:text="@string/activate_notifications"
+                style="@style/TextColorTwo"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/switch1"
+                android:layout_toEndOf="@+id/profile_ic_notification"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/pure_gray"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/save_settings_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_settings_text_rl"
+        android:padding="15dp"
+        style="@style/CardBackground">
+
+        <TextView
+            android:id="@+id/profile_save_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            style="@style/TextColorTwo"/>
+
+        <TextView
+            android:id="@+id/profile_save_text_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/profile_save_text_view"
+            android:text="@string/profile_save_question"
+            style="@style/TextColorTwo"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_profile_changes_btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/profile_save_text_textView"
+            android:background="@drawable/orange_button_background"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profile_help_text_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/save_settings_rl"
+            android:padding="15dp"
+            style="@style/CardBackground">
+
+
+
+            <TextView
+                android:id="@+id/profile_help_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                style="@style/TextColorTwo"/>
+
+
+            <RelativeLayout
+                android:id="@+id/do_question_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/profile_help_text_view">
+
+                <ImageView
+                    android:id="@+id/profile_ic_do_question"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_do_cuestion" />
+
+                <TextView
+                    android:id="@+id/do_question_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/profile_ic_do_question"
+                    android:text="@string/do_question"
+                    style="@style/TextColorTwo"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/do_question_textView"
+                    android:layout_toEndOf="@+id/profile_ic_do_question"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/pure_gray"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/faq_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/do_question_rl">
+
+                <ImageView
+                    android:id="@+id/profile_ic_faq"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_cuestion" />
+
+                <TextView
+                    android:id="@+id/faq_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/profile_ic_faq"
+                    android:text="@string/faq"
+                    style="@style/TextColorTwo"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/faq_textView"
+                    android:layout_toEndOf="@+id/profile_ic_faq"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/pure_gray"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/privacity_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/faq_rl">
+
+                <ImageView
+                    android:id="@+id/profile_ic_privacity"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_privacity" />
+
+                <TextView
+                    android:id="@+id/privacity_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/profile_ic_privacity"
+                    android:text="@string/privacity_politic"
+                    style="@style/TextColorTwo"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/privacity_textView"
+                    android:layout_toEndOf="@+id/profile_ic_privacity"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/pure_gray"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

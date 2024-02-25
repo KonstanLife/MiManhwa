@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Reounded cornes image -->
+    <style name="styleRoundedCornersImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+
+    </style>
+
+    <!-- for circle image -->
+    <style name="style_circle_image">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Transparent background dialog -->
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background"></item>
+    </style>
+
+</resources>

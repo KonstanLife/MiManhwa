@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/title_one">
+
+           <menu>
+
+        <item android:id="@+id/main_page"
+            android:title= "@string/home"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_home" />
+
+        <item android:id="@+id/user_profile"
+            android:title="@string/book_mark"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_book_marks"/>
+
+            <item android:id="@+id/user_genre"
+                android:title="@string/genre"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_genre" />
+
+        <item android:id="@+id/add_book"
+            android:title="@string/add_book"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_add_book" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/title_two">
+
+            <menu>
+
+                <item android:id="@+id/userManagment"
+                    android:title="@string/user_management"
+                    app:showAsAction="never"
+                    android:icon="@drawable/ic_management_users"/>
+                <item android:id="@+id/categoryManagment"
+                    android:title="@string/genre_management"
+                    app:showAsAction="never"
+                    android:icon="@drawable/ic_management_genre"/>
+
+            </menu>
+
+        </item>
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/title_three">
+
+            <menu>
+
+                <item android:id="@+id/settings_pr"
+                    android:title="@string/settings_profile"
+                    app:showAsAction="never"
+                    android:icon="@drawable/ic_settings" />
+
+                <item android:id="@+id/closeSession"
+                    android:title="@string/logout"
+                    app:showAsAction="never"
+                    android:icon="@drawable/ic_logout" />
+
+            </menu>
+
+        </item>
+
+
+    </group>
+
+</menu>
